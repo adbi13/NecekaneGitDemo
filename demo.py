@@ -99,8 +99,19 @@ sold_qty = book["sold"] # cislo (int)
 
 
 total_sales = 0
-for item in books:
-    total_sales += item["sold"]
+for slovnik in books:
+    total_sales += slovnik["sold"]
+
 print(f"Celkem bylo prodáno {total_sales} knih.")
 
 
+names = set()
+
+names.add('Martin')
+names.add('Jana')
+names.add('Petr')
+names.add('Simona')
+print(len(names), names)
+
+names.add('Martin')
+print(len(names), names)
