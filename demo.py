@@ -51,9 +51,35 @@ item = {
 
 key = "price"
 
-print(item[key])
+# print(item[key])
 
 # dve varianty jak vytvorit prazdny slovik
 empty_dict = {}
 empty_dict = dict()
 
+
+
+
+# -------------------------- Slovniky a cykly
+sales = {
+    "Zkus mě chytit": 4165,
+    "Vrah zavolá v deset": 5681,
+    "Zločinný steh": 2565,
+}
+
+# Klice = keys
+for houba in sales.keys():
+    print(houba)
+
+# =
+
+# for key in sales:
+#     print(key)
+
+# Hodnoty = values
+for hrib in sales.values():
+    print(hrib)
+
+#   = items
+for lysohlavka, muchomurka in sales.items():
+    print(f"Klic: {lysohlavka}, Hodnota: {muchomurka}")
