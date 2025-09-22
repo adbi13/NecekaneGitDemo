@@ -12,21 +12,44 @@ stock = [
         "qty": 40
     },
     {
+        "price": 2000,
         "brand": "Sony",
         "model": "gggg 89",
-        "price": 2000,
         "qty": 13
     },
     {
-        "brand": "Beats",
-        "model": "chachacha",
         "price": 3500,
+        "model": "chachacha",
+        "brand": "Beats",
         "qty": 0
     }
 ]
 
 
 
-for item in stock:
-    print(f"Brand: {item['brand']}\tModel: {item['model']}\tPrice: {item['price']}\tStock Qty: {item['qty']}")
+# for item in stock:
+#     print(f"Brand: {item['brand']}, Model: {item['model']}, Price: {item['price']}, Stock Qty: {item['qty']}")
+
+list_item = [
+    "Beats",
+    "chachacha",
+    3500,
+    0
+]
+
+list_item.append("red")
+
+print(list_item)
+
+
+item = {
+    "price": 3500,
+    "model": "chachacha",
+    "brand": "Beats",
+    "qty": 0
+}
+
+item["color"] = "blue"
+
+print(item)
 
