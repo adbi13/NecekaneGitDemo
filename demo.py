@@ -39,7 +39,7 @@ list_item = [
 
 list_item.append("red")
 
-print(list_item)
+# print(list_item)
 
 
 item = {
@@ -49,7 +49,11 @@ item = {
     "qty": 0
 }
 
-item["color"] = "blue"
+key = "price"
 
-print(item)
+print(item[key])
+
+# dve varianty jak vytvorit prazdny slovik
+empty_dict = {}
+empty_dict = dict()
 
